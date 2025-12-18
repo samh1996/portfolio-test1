@@ -3,11 +3,16 @@
 import * as React from "react";
 import {
   AudioWaveform,
+  BadgeDollarSign,
   BookOpen,
   Bot,
+  Briefcase,
   Command,
+  FolderGit2,
   Frame,
   GalleryVerticalEnd,
+  House,
+  Mail,
   Map,
   PieChart,
   Settings2,
@@ -129,29 +134,29 @@ const data = {
   // ],
   projects: [
     {
-      name: "Home",
+      name: "About",
       url: "#",
-      icon: Frame,
+      icon: House,
     },
     {
       name: "Work",
       url: "/projects",
-      icon: PieChart,
+      icon: Briefcase,
     },
     {
       name: "Projects",
       url: "/projects",
-      icon: Map,
+      icon: FolderGit2,
     },
     {
       name: "Freelance",
       url: "#",
-      icon: Map,
+      icon: BadgeDollarSign,
     },
     {
       name: "Contact",
       url: "#",
-      icon: Map,
+      icon: Mail,
     },
   ],
 };

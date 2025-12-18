@@ -39,12 +39,12 @@ export function NavProjects({
   return (
     <SidebarGroup className="group/collapsible">
       <SidebarGroupLabel>Projects</SidebarGroupLabel>
-      <SidebarMenu>
+      <SidebarMenu className="gap-3">
         {projects.map((item) => (
           <SidebarMenuItem key={item.name}>
             <SidebarMenuButton asChild>
               <a href={item.url}>
-                <item.icon />
+                <item.icon style={{ width: 26, height: 26 }} />
                 <span>{item.name}</span>
               </a>
             </SidebarMenuButton>
@@ -77,12 +77,12 @@ export function NavProjects({
             </DropdownMenu>
           </SidebarMenuItem>
         ))}
-        <SidebarMenuItem>
+        {/* <SidebarMenuItem>
           <SidebarMenuButton className="text-sidebar-foreground/70">
             <MoreHorizontal className="text-sidebar-foreground/70" />
             <span>More</span>
           </SidebarMenuButton>
-        </SidebarMenuItem>
+        </SidebarMenuItem> */}
       </SidebarMenu>
     </SidebarGroup>
   );
