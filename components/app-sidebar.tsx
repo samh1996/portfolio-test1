@@ -159,7 +159,7 @@ const data = {
     },
     {
       name: "Contact",
-      url: "#",
+      url: "/contact",
       icon: Mail,
     },
   ],
