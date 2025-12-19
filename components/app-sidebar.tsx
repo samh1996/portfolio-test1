@@ -139,7 +139,7 @@ const data = {
     },
     {
       name: "Work",
-      url: "/projects",
+      url: "/work",
       icon: Briefcase,
     },
     {
@@ -154,7 +154,7 @@ const data = {
     },
     {
       name: "Freelance",
-      url: "#",
+      url: "/freelance",
       icon: BadgeDollarSign,
     },
     {

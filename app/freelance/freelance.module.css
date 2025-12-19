@@ -1,0 +1,230 @@
+:global(:root) {
+  --bg: #050816;
+  --bg-alt: #0b1020;
+  --primary: #ffd166;
+  --accent: #4cc9f0;
+  --text: #f8f9ff;
+  --muted: #a0a4c0;
+  --card-radius: 18px;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+}
+
+:global(*) {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+:global(body) {
+  background: radial-gradient(circle at top, #151b3b 0, #050816 55%);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+  max-width: 900px;
+  padding: 2.5rem 1.5rem 3rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.brand span {
+  color: var(--primary);
+}
+
+.links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+
+.links a:hover {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 3vw + 1.5rem, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.heroSubtitle {
+  color: var(--muted);
+  max-width: 650px;
+  font-size: 0.98rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.serviceGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 650px;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: linear-gradient(145deg, #111827, #020617);
+  border-radius: var(--card-radius);
+  padding: 1.5rem 1.5rem 1.4rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+  border-color: rgba(148, 163, 184, 0.3);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.feature {
+  font-size: 0.85rem;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+}
+
+.ctaSection {
+  background: linear-gradient(145deg, #111827, #020617);
+  border-radius: var(--card-radius);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: var(--text);
+}
+
+.ctaDesc {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 1.8rem;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-block;
+  font-size: 0.95rem;
+  padding: 0.75rem 2rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--primary), #ff9f1c);
+  color: #111827;
+  border: 1px solid transparent;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.08s ease, box-shadow 0.15s ease;
+}
+
+.ctaButton:hover {
+  background: linear-gradient(135deg, #ffe08a, var(--primary));
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(255, 209, 102, 0.3);
+}
+
+.footer {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .links a {
+    margin-left: 0;
+    margin-right: 0.9rem;
+    margin-top: 0.15rem;
+  }
+
+  .icon {
+    font-size: 1.8rem;
+  }
+
+  .cardTitle {
+    font-size: 1.15rem;
+  }
+
+  .ctaSection {
+    padding: 2rem 1.5rem;
+  }
+
+  .ctaTitle {
+    font-size: 1.5rem;
+  }
+}

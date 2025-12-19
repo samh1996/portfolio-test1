@@ -41,6 +41,9 @@ const Page = () => {
                   fill
                   style={{ objectFit: "cover", objectPosition: "top" }}
                   sizes="200px"
+                  priority
+                  placeholder="blur"
+                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
                 />
               </div>
               <div className={styles.profileName}>Sam Hendricksen</div>
