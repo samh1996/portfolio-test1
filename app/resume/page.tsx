@@ -10,7 +10,8 @@ const metadata = {
 
 const Page = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const resumeUrl = "/resume.pdf";
+  const resumeUrl = "/api/resume"; // Changed to API route
+  const resumeDownloadUrl = "/resume.pdf"; // Direct PDF for download
   const resumeImages = ["/resume-1.png", "/resume-2.png", "/resume-3.png"]; // Add more pages if multi-page
 
   useEffect(() => {
@@ -89,7 +90,7 @@ const Page = () => {
 
             <div style={{ marginTop: 12 }}>
               <a
-                href={resumeUrl}
+                href={resumeDownloadUrl}
                 download="Sam_Hendricksen_Resume.pdf"
                 className={styles.primary}
               >
