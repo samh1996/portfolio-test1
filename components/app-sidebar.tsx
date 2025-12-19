@@ -8,16 +8,14 @@ import {
   Bot,
   Briefcase,
   Command,
+  FolderCheck,
   FolderGit2,
   Frame,
   GalleryVerticalEnd,
+  Hourglass,
   House,
   Mail,
-  Map,
   Paperclip,
-  PieChart,
-  Settings2,
-  SquareTerminal,
 } from "lucide-react";
 
 // import { NavMain } from "@/components/nav-main";
@@ -136,7 +134,7 @@ const data = {
   projects: [
     {
       name: "About",
-      url: "#",
+      url: "/about",
       icon: House,
     },
     {
@@ -170,9 +168,9 @@ const data = {
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
-      <SidebarHeader>
+      {/* <SidebarHeader>
         <TeamSwitcher teams={data.teams} />
-      </SidebarHeader>
+      </SidebarHeader> */}
       <SidebarContent>
         {/* <NavMain items={data.navMain} /> */}
         <NavProjects projects={data.projects} />

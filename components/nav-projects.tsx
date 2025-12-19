@@ -38,17 +38,17 @@ export function NavProjects({
 
   return (
     <SidebarGroup className="group/collapsible">
-      <SidebarGroupLabel>Projects</SidebarGroupLabel>
+      <SidebarGroupLabel className="translate-x-1">Pages</SidebarGroupLabel>
       <SidebarMenu className="gap-3">
         {projects.map((item) => (
           <SidebarMenuItem key={item.name}>
-            <SidebarMenuButton asChild className="translate-x-4">
+            <SidebarMenuButton asChild className="translate-x-2">
               <a href={item.url}>
                 <item.icon style={{ width: 26, height: 26 }} />
                 <span>{item.name}</span>
               </a>
             </SidebarMenuButton>
-            <DropdownMenu>
+            {/* <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <SidebarMenuAction showOnHover>
                   <MoreHorizontal />
@@ -74,7 +74,7 @@ export function NavProjects({
                   <span>Delete Project</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
-            </DropdownMenu>
+            </DropdownMenu> */}
           </SidebarMenuItem>
         ))}
         {/* <SidebarMenuItem>
