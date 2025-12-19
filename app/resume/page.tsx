@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import styles from "./resume.module.css";
+import Image from "next/image";
 
 const metadata = {
   title: "Sam Hendricksen | Resume",
@@ -10,6 +11,7 @@ const metadata = {
 const Page = () => {
   const [isMobile, setIsMobile] = useState(false);
   const resumeUrl = "/resume.pdf";
+  const resumeImages = ["/resume-1.png", "/resume-2.png", "/resume-3.png"]; // Add more pages if multi-page
 
   useEffect(() => {
     const checkMobile = () => {
@@ -36,56 +38,45 @@ const Page = () => {
       <main>
         <section>
           <div style={{ marginTop: "1rem" }}>
+            {isMobile && (
+              <div style={{ marginBottom: "1rem" }}>
+                <a
+                  href={resumeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.primary}
+                >
+                  Open PDF in New Tab
+                </a>
+              </div>
+            )}
+
             <div
               style={{
-                height: 820,
+                height: isMobile ? "auto" : 820,
                 borderRadius: 12,
-                overflow: "hidden",
+                overflow: isMobile ? "visible" : "hidden",
                 border: "1px solid rgba(148,163,184,0.12)",
               }}
             >
               {isMobile ? (
-                <div
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    padding: "2rem",
-                    textAlign: "center",
-                    background: "rgba(148,163,184,0.05)",
-                  }}
-                >
-                  <svg
-                    width="64"
-                    height="64"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    style={{ marginBottom: "1rem", opacity: 0.5 }}
-                  >
-                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                    <polyline points="14 2 14 8 20 8" />
-                    <line x1="16" y1="13" x2="8" y2="13" />
-                    <line x1="16" y1="17" x2="8" y2="17" />
-                    <polyline points="10 9 9 9 8 9" />
-                  </svg>
-                  <h3 style={{ marginBottom: "0.5rem" }}>Resume PDF</h3>
-                  <p style={{ marginBottom: "1.5rem", opacity: 0.7 }}>
-                    View or download the PDF below
-                  </p>
-                  <a
-                    href={resumeUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.primary}
-                    style={{ marginBottom: "0.75rem" }}
-                  >
-                    Open PDF in New Tab
-                  </a>
+                <div style={{ padding: "1rem", background: "#fff" }}>
+                  {resumeImages.map((image, index) => (
+                    <Image
+                      key={index}
+                      src={image}
+                      alt={`Resume page ${index + 1}`}
+                      width={800}
+                      height={1035}
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        marginBottom:
+                          index < resumeImages.length - 1 ? "1rem" : 0,
+                      }}
+                      priority={index === 0}
+                    />
+                  ))}
                 </div>
               ) : (
                 <iframe
