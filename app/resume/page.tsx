@@ -1,16 +1,26 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import styles from "./resume.module.css";
 
-export const metadata = {
+const metadata = {
   title: "Sam Hendricksen | Resume",
 };
 
-const page = () => {
-  // OPTION A (recommended): put resume.pdf in /public and use "/resume.pdf"
+const Page = () => {
+  const [isMobile, setIsMobile] = useState(false);
   const resumeUrl = "/resume.pdf";
 
-  // OPTION B (alternative): import the file from the repo (may require next config / d.ts)
-  // import resumeUrl from "../projects/resume.pdf";
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <div className={styles.page}>
@@ -34,15 +44,44 @@ const page = () => {
                 border: "1px solid rgba(148,163,184,0.12)",
               }}
             >
-              <iframe
-                src={resumeUrl}
-                title="Resume"
-                style={{ width: "100%", height: "100%", border: 0 }}
-              />
+              {isMobile ? (
+                <object
+                  data={`${resumeUrl}#view=FitH`}
+                  type="application/pdf"
+                  style={{ width: "100%", height: "100%", border: 0 }}
+                  aria-label="Resume PDF"
+                >
+                  <embed
+                    src={`${resumeUrl}#view=FitH`}
+                    type="application/pdf"
+                    style={{ width: "100%", height: "100%", border: 0 }}
+                  />
+                  <p style={{ padding: "2rem", textAlign: "center" }}>
+                    Your browser doesn't support embedded PDFs.{" "}
+                    <a
+                      href={resumeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View PDF
+                    </a>
+                  </p>
+                </object>
+              ) : (
+                <iframe
+                  src={resumeUrl}
+                  title="Resume"
+                  style={{ width: "100%", height: "100%", border: 0 }}
+                />
+              )}
             </div>
 
             <div style={{ marginTop: 12 }}>
-              <a href={resumeUrl} download className={styles.primary}>
+              <a
+                href={resumeUrl}
+                download="Sam_Hendricksen_Resume.pdf"
+                className={styles.primary}
+              >
                 Download PDF
               </a>
             </div>
@@ -58,4 +97,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

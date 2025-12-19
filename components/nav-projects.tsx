@@ -39,7 +39,7 @@ export function NavProjects({
   return (
     <SidebarGroup className="group/collapsible">
       <SidebarGroupLabel className="translate-x-1">Pages</SidebarGroupLabel>
-      <SidebarMenu className="gap-3">
+      <SidebarMenu className="gap-2">
         {projects.map((item) => (
           <SidebarMenuItem key={item.name}>
             <SidebarMenuButton asChild className="translate-x-2">
