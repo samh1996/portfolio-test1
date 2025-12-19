@@ -14,6 +14,7 @@ import {
   House,
   Mail,
   Map,
+  Paperclip,
   PieChart,
   Settings2,
   SquareTerminal,
@@ -147,6 +148,11 @@ const data = {
       name: "Projects",
       url: "/projects",
       icon: FolderGit2,
+    },
+    {
+      name: "Resume",
+      url: "/resume",
+      icon: Paperclip,
     },
     {
       name: "Freelance",

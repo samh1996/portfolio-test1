@@ -67,15 +67,13 @@ const Projects = () => {
             </article>
 
             <article className={styles.card}>
-              <div className={styles.cardTag}>Web App</div>
-              <h2 className={styles.cardTitle}>Exam Scheduler</h2>
+              <div className={styles.cardTag}>Kubernetes</div>
+              <h2 className={styles.cardTitle}>Nyla Cluster</h2>
               <p className={styles.cardDesc}>
-                Tool to schedule exams and avoid conflicts using a simple
-                calendar UI and backend rules.
+                Creates a local kubernetes cluster that will output using a
+                spring boot api.
               </p>
-              <div className={styles.tech}>
-                React · Spring Boot · PostgreSQL
-              </div>
+              <div className={styles.tech}>Spring Boot · Java · Kubernetes</div>
               <div className={styles.cardActions}>
                 <a
                   className={`${styles.btn} ${styles.primary}`}
@@ -87,7 +85,7 @@ const Projects = () => {
                 </a>
                 <a
                   className={styles.btn}
-                  href="https://github.com/your-username/exam-scheduler"
+                  href="https://github.com/samh1996/NylaKube"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -131,7 +129,7 @@ const Projects = () => {
                 This site itself – a lightweight portfolio to showcase projects
                 and experiments as I learn.
               </p>
-              <div className={styles.tech}>HTML · CSS · (future: Next.js)</div>
+              <div className={styles.tech}>Next.js · HTML · CSS</div>
               <div className={styles.cardActions}>
                 <a
                   className={`${styles.btn} ${styles.primary}`}
