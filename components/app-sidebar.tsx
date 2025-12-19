@@ -2,19 +2,14 @@
 
 import * as React from "react";
 import {
-  AudioWaveform,
   BadgeDollarSign,
-  BookOpen,
-  Bot,
   Briefcase,
-  Command,
-  FolderCheck,
+  BriefcaseBusiness,
   FolderGit2,
-  Frame,
   GalleryVerticalEnd,
-  Hourglass,
   House,
   Mail,
+  MailCheck,
   Paperclip,
 } from "lucide-react";
 
@@ -22,6 +17,7 @@ import {
 import { NavProjects } from "@/components/nav-projects";
 import { NavUser } from "@/components/nav-user";
 import { TeamSwitcher } from "@/components/team-switcher";
+
 import {
   Sidebar,
   SidebarContent,
@@ -35,7 +31,7 @@ const data = {
   user: {
     name: "Sam Hendricksen",
     email: "samuel.h1996@yahoo.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "/cropped-profile-pic.png",
   },
   teams: [
     {
@@ -140,7 +136,7 @@ const data = {
     {
       name: "Work",
       url: "/work",
-      icon: Briefcase,
+      icon: BriefcaseBusiness,
     },
     {
       name: "Projects",
@@ -160,7 +156,7 @@ const data = {
     {
       name: "Contact",
       url: "/contact",
-      icon: Mail,
+      icon: MailCheck,
     },
   ],
 };
