@@ -64,26 +64,35 @@ const Page = () => {
 
           <div className={styles.content}>
             <h1 className={styles.heroTitle}>About Me</h1>
-            <p className={styles.heroSubtitle}>
-              I build backend services and web apps while learning
-              production-grade infrastructure. My focus is on reliable APIs,
-              clean UX, and practical automation.
-            </p>
 
             <div className={styles.aboutText}>
               <p>
-                I enjoy building small teams' tooling and projects that help
-                people ship faster. I work primarily with Java and Spring Boot
-                for backend systems and Python for data/experimentation. On the
-                frontend I use React / Next.js with TypeScript.
+                I’m a backend-focused software engineer building production
+                systems and APIs with an emphasis on reliability, scalability,
+                and developer tooling.
               </p>
-
               <p>
-                Outside of coding I like learning about distributed systems,
-                container orchestration, and exploring ways to make developer
-                workflows smoother.
+                On my current team, I work on data transfer and integration
+                software, building and maintaining systems that support SFTP,
+                HTTPS, BOX, and internal transfer workflows. My day-to-day work
+                involves designing backend services, integrating APIs, and
+                supporting event-driven, AWS-native architectures.
               </p>
-
+              <p>
+                I primarily work in <b>Python and Java</b>, using{" "}
+                <b>Lambda-based microservices with PostgreSQL (RDS)</b> and{" "}
+                <b>DynamoDB</b> for persistence. I enjoy building internal tools
+                and automation that help teams ship faster, reduce operational
+                friction, and improve confidence in backend changes.
+              </p>
+              <p>
+                While backend development is my core focus, I also build
+                lightweight frontend tools to support testing, validation, and
+                operational visibility. Recently, I’ve been expanding into
+                machine learning, earning my AWS Machine Learning – Associate
+                certification and exploring ways to combine backend systems with
+                ML-driven features.
+              </p>
               <div className={styles.cardActions}>
                 <a className="btn primary" href="/resume">
                   View Resume
@@ -98,8 +107,8 @@ const Page = () => {
       </main>
 
       <footer className={styles.footer}>
-        © {new Date().getFullYear()} Sam Hendricksen · Built while learning
-        Spring Boot &amp; React
+        © {new Date().getFullYear()} Sam Hendricksen · Built with Next.js &amp;
+        React
       </footer>
     </div>
   );
