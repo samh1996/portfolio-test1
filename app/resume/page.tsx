@@ -11,6 +11,7 @@ const metadata = {
 const Page = () => {
   const [isMobile, setIsMobile] = useState(false);
   const resumeUrl = "/resume.pdf";
+  // const resumeUrl = "/Hendricksen_resume.pdf";
   const resumeImages = ["/resume-1.png", "/resume-2.png", "/resume-3.png"]; // Add more pages if multi-page
 
   useEffect(() => {
