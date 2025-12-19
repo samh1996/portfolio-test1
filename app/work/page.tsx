@@ -116,15 +116,18 @@ const Page = () => {
                   </div>
 
                   {job.gif && (
-                    <div className={styles.gifContainer}>
-                      <Image
-                        src={job.gif}
-                        alt={`${job.role} at ${job.company}`}
-                        width={300}
-                        height={400}
-                        unoptimized
-                        className={styles.gif}
-                      />
+                    <div className={styles.gifWrapper}>
+                      <div className={styles.gifContainer}>
+                        <Image
+                          src={job.gif}
+                          alt={`${job.role} at ${job.company}`}
+                          width={300}
+                          height={400}
+                          unoptimized
+                          className={styles.gif}
+                        />
+                      </div>
+                      <p className={styles.gifCaption}>Yes, that's really me</p>
                     </div>
                   )}
                 </div>
