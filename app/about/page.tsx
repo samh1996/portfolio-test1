@@ -6,16 +6,10 @@ export const metadata = {
   title: "Sam Hendricksen | About",
 };
 
-const SKILLS = [
-  "Java",
-  "Spring Boot",
-  "Python",
-  "FastAPI",
-  "React / Next.js",
-  "TypeScript",
-  "PostgreSQL",
-  "Kubernetes",
-];
+const SKILLS = {
+  primary: ["Python", "Java", "PostgreSQL"],
+  backend: ["AWS Lambda", "DynamoDB"],
+};
 
 const Page = () => {
   return (
@@ -51,14 +45,33 @@ const Page = () => {
             </div>
 
             <div className={styles.skills}>
-              <h4 className={styles.cardTag}>Skills</h4>
-              <ul className={styles.skillsList}>
-                {SKILLS.map((s) => (
-                  <li key={s} className={styles.skillTag}>
-                    {s}
-                  </li>
-                ))}
-              </ul>
+              <div className={styles.skillSection}>
+                <p className={styles.skillLabel}>
+                  Backend-first • AWS-native • Production systems
+                </p>
+              </div>
+
+              <div className={styles.skillSection}>
+                <h4 className={styles.skillCategory}>Primary</h4>
+                <div className={styles.skillsList}>
+                  {SKILLS.primary.map((s) => (
+                    <span key={s} className={styles.skillTag}>
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className={styles.skillSection}>
+                <h4 className={styles.skillCategory}>Backend & Platform</h4>
+                <div className={styles.skillsList}>
+                  {SKILLS.backend.map((s) => (
+                    <span key={s} className={styles.skillTag}>
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </aside>
 
@@ -67,7 +80,7 @@ const Page = () => {
 
             <div className={styles.aboutText}>
               <p>
-                I’m a backend-focused software engineer building production
+                I'm a backend-focused software engineer building production
                 systems and APIs with an emphasis on reliability, scalability,
                 and developer tooling.
               </p>
@@ -88,8 +101,9 @@ const Page = () => {
               <p>
                 While backend development is my core focus, I also build
                 lightweight frontend tools to support testing, validation, and
-                operational visibility. Recently, I’ve been expanding into
-                machine learning, earning my AWS Machine Learning – Associate
+                operational visibility. Recently, I've been expanding into
+                machine learning, earning my
+                <b> AWS Machine Learning – Associate </b>
                 certification and exploring ways to combine backend systems with
                 ML-driven features.
               </p>

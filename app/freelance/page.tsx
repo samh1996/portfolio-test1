@@ -9,28 +9,18 @@ const Page = () => {
       title: "Portfolio Websites",
       description:
         "Custom-built portfolio websites like the one you're viewing right now. Responsive design, modern UI/UX, and optimized for performance.",
-      features: [
-        "Responsive Design",
-        "SEO Optimized",
-        "Fast Loading",
-        "Custom Animations",
-      ],
+      features: ["Responsive Design", "SEO Optimized", "Fast Loading"],
     },
     {
       icon: "🔒",
       title: "Secure SFTP File Transfers",
       description:
         "Set up secure file transfer protocols for your business. Automated backups, encrypted transfers, and reliable data management.",
-      features: [
-        "End-to-End Encryption",
-        "Automated Backups",
-        "User Management",
-        "Access Logs",
-      ],
+      features: ["End-to-End Encryption", "Automated Backups", "Access Logs"],
     },
     {
       icon: "💼",
-      title: "Full-Stack Web Applications",
+      title: "Full-Stack Web Applications (Available Soon)",
       description:
         "Build complete web applications from frontend to backend. React, Next.js, Spring Boot, and database integration.",
       features: [

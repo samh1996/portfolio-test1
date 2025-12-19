@@ -44,7 +44,7 @@ const Projects = () => {
                 search.
               </p>
               <div className={styles.tech}>
-                Spring Boot · React/Next.js · PostgreSQL
+                Java · Spring Boot · Next.js · PostgreSQL
               </div>
               <div className={styles.cardActions}>
                 <a
@@ -73,7 +73,7 @@ const Projects = () => {
                 Creates a local kubernetes cluster that will output using a
                 spring boot api.
               </p>
-              <div className={styles.tech}>Spring Boot · Java · Kubernetes</div>
+              <div className={styles.tech}>Java · Spring Boot · Kubernetes</div>
               <div className={styles.cardActions}>
                 <a
                   className={`${styles.btn} ${styles.primary}`}
@@ -81,7 +81,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Live
+                  Live (coming soon)
                 </a>
                 <a
                   className={styles.btn}
@@ -95,7 +95,7 @@ const Projects = () => {
             </article>
 
             <article className={styles.card}>
-              <div className={styles.cardTag}>API</div>
+              <div className={styles.cardTag}>API - In Progress</div>
               <h2 className={styles.cardTitle}>Match Predictor</h2>
               <p className={styles.cardDesc}>
                 Simple stats-based API and UI for predicting football match
@@ -109,7 +109,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Live
+                  Live (coming soon)
                 </a>
                 <a
                   className={styles.btn}
@@ -133,19 +133,11 @@ const Projects = () => {
               <div className={styles.cardActions}>
                 <a
                   className={`${styles.btn} ${styles.primary}`}
-                  href="#"
+                  href="https://github.com/samh1996/portfolio-test1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Repo
-                </a>
-                <a
-                  className={styles.btn}
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  More
                 </a>
               </div>
             </article>
