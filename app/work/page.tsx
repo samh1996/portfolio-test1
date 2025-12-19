@@ -12,46 +12,88 @@ const Page = () => {
       company: "Fannie Mae",
       role: "Senior Cloud Software Engineer",
       period: "Jan 2020 - Present",
-      location: "Remote",
+      location: "Reston, VA (Remote)",
       description:
-        "Building scalable backend services and APIs for enterprise clients. Leading development of microservices architecture.",
+        "Designing and developing enterprise software solutions in Java and Python across secure, high-throughput systems. Leading automation initiatives, orchestration pipelines, and encryption modernization efforts.",
       highlights: [
-        "Designed and implemented RESTful APIs using Spring Boot serving 10K+ daily requests",
-        "Reduced API response time by 40% through database query optimization",
-        "Mentored junior developers and conducted code reviews",
-        "Deployed services to Kubernetes clusters with 99.9% uptime",
+        "Developed self-service onboarding automation tool reducing delivery time by ~20%",
+        "Built Python/Flask migration dashboard to migrate 100+ applications",
+        "Led enterprise-wide cipher modernization initiative aligned with compliance standards",
+        "Architected decoupled orchestration workflows improving scalability and reliability",
+        "Optimized PostgreSQL databases and scaled ECS-based tasks for distributed systems",
       ],
-      technologies: ["Python", "Java", "PostgreSQL", "ECS", "Docker", "Lambda"],
+      technologies: [
+        "Java",
+        "Python",
+        "PostgreSQL",
+        "DynamoDB",
+        "AWS Lambda",
+        "ECS",
+        "Docker",
+        "Flask",
+      ],
     },
     {
-      company: "Ten 56, Brand Developmenet",
-      role: "Chick-Fil-A Cow",
-      period: "2014-2015",
-      location: "Event Locations",
+      company: "Ten 56, Brand Development",
+      role: "Chick-fil-A Cow",
+      period: "Sep 2014 - Aug 2015",
+      location: "Yorktown, VA",
       description:
         "Lived the life of the Chick-fil-A cow, promoting healthy eating habits and encouraging people to 'Eat Mor Chikin' through public appearances and events. This job is out of order but I'm keeping it for fun.",
       highlights: [
         "The Chick-fil-A Cow",
         "Silently judging you if you don't order chicken",
-        "Hearing too many cow Jokes",
+        "Hearing too many cow jokes",
       ],
       technologies: ["Costume Fan", "Golf Cart", "Skateboard"],
       gif: "/skateboarding-cow.gif",
     },
     {
-      company: "Previous Company",
-      role: "Junior Developer",
-      period: "Jun 2021 - Dec 2022",
-      location: "City, State",
+      company: "U.S. Coast Guard Reserve",
+      role: "Marine Science Technician",
+      period: "Aug 2015 - Jun 2021",
+      location: "Norfolk, VA",
       description:
-        "Developed web applications and contributed to full-stack projects using React and Node.js.",
+        "Applied federal compliance and security frameworks to operational procedures. Strengthened risk mitigation and multi-agency coordination while gaining hands-on experience in government-regulated operations.",
       highlights: [
-        "Built responsive web applications using React and TypeScript",
-        "Collaborated with design team to implement pixel-perfect UIs",
-        "Wrote comprehensive unit tests achieving 85% code coverage",
-        "Participated in agile sprints and daily standups",
+        "Applied federal compliance frameworks (CFR) to operational procedures",
+        "Strengthened risk mitigation and multi-agency coordination",
+        "Gained experience in government-regulated operations and defense systems",
+        "Held Secret Clearance during service",
       ],
-      technologies: ["React", "TypeScript", "Node.js", "MongoDB"],
+      technologies: [
+        "Federal Compliance",
+        "Security Frameworks",
+        "Risk Management",
+      ],
+    },
+    {
+      company: "nCino",
+      role: "Software Developer Intern",
+      period: "May 2019 - Aug 2019",
+      location: "Wilmington, NC",
+      description:
+        "Built secure financial workflows and improved compliance features in data workflows for banking software solutions.",
+      highlights: [
+        "Developed secure financial workflows using Apex and AngularJS",
+        "Enhanced compliance features in data workflows through JavaScript improvements",
+        "Contributed to enterprise banking software solutions",
+      ],
+      technologies: ["Apex", "AngularJS", "JavaScript", "Salesforce"],
+    },
+    {
+      company: "TrackOff",
+      role: "UI Developer Intern",
+      period: "May 2018 - Aug 2018",
+      location: "Baltimore, MD",
+      description:
+        "Updated iOS application and integrated analytics pipelines to track user behavior and improve application transparency.",
+      highlights: [
+        "Updated iOS application with modern UI improvements",
+        "Integrated analytics pipelines to track usage trends",
+        "Redesigned UI for improved clarity and user transparency",
+      ],
+      technologies: ["iOS", "Swift", "Analytics", "UI/UX Design"],
     },
   ];
 
@@ -73,8 +115,9 @@ const Page = () => {
         <section>
           <h1 className={styles.heroTitle}>Work Experience</h1>
           <p className={styles.heroSubtitle}>
-            A timeline of my professional journey, highlighting key projects and
-            accomplishments in software development.
+            A timeline of my professional journey, from government service to
+            enterprise software engineering, highlighting key projects and
+            accomplishments.
           </p>
 
           <div className={styles.workGrid}>
