@@ -55,15 +55,14 @@ const Projects = () => {
                 >
                   Website <span className={styles.externalLinkIcon}>↗</span>
                 </a>
-                <a
+                {/* <a
                   className={styles.btn}
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-disabled="true"
                 >
                   GitHub
-                </a>
+                </a> */}
               </div>
             </article>
 
