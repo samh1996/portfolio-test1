@@ -53,13 +53,14 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Live (coming soon)
+                  Website <span className={styles.externalLinkIcon}>↗</span>
                 </a>
                 <a
                   className={styles.btn}
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-disabled="true"
                 >
                   GitHub
                 </a>
