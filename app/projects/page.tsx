@@ -36,6 +36,37 @@ const Projects = () => {
 
           <div className={styles.projectGrid}>
             <article className={styles.card}>
+              <div className={styles.cardTag}>Complete</div>
+              <h2 className={styles.cardTitle}>Game Hub</h2>
+              <p className={styles.cardDesc}>
+                A React web app that displays video games with dynamic filtering
+                by genre and platform, along with multiple sorting options for
+                improved discovery and usability.
+              </p>
+              <div className={styles.tech}>
+                React · Typescript · CSS · RAWG API
+              </div>
+              <div className={styles.cardActions}>
+                <a
+                  className={`${styles.btn} ${styles.primary}`}
+                  href="https://sam-game-hub.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live (coming soon)
+                </a>
+                <a
+                  className={styles.btn}
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article className={styles.card}>
               <div className={styles.cardTag}>In Progress</div>
               <h2 className={styles.cardTitle}>NeighborShare</h2>
               <p className={styles.cardDesc}>
