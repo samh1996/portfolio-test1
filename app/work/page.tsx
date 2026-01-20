@@ -37,7 +37,7 @@ const Page = () => {
       company: "Ten 56, Brand Development",
       role: "Chick-fil-A Cow",
       period: "Sep 2014 - Aug 2015",
-      location: "Yorktown, VA",
+      location: "Virginia",
       description:
         "Lived the life of the Chick-fil-A cow, promoting healthy eating habits and encouraging people to 'Eat Mor Chikin' through public appearances and events. This job is out of order but I'm keeping it for fun.",
       highlights: [
@@ -52,7 +52,7 @@ const Page = () => {
       company: "U.S. Coast Guard Reserve",
       role: "Marine Science Technician",
       period: "Aug 2015 - Jun 2021",
-      location: "Norfolk, VA",
+      location: "Virginia",
       description:
         "Applied federal compliance and security frameworks to operational procedures. Strengthened risk mitigation and multi-agency coordination while gaining hands-on experience in government-regulated operations.",
       highlights: [
@@ -71,7 +71,7 @@ const Page = () => {
       company: "nCino",
       role: "Software Developer Intern",
       period: "May 2019 - Aug 2019",
-      location: "Wilmington, NC",
+      location: "North Carolina",
       description:
         "Built secure financial workflows and improved compliance features in data workflows for banking software solutions.",
       highlights: [
@@ -85,7 +85,7 @@ const Page = () => {
       company: "TrackOff",
       role: "UI Developer Intern",
       period: "May 2018 - Aug 2018",
-      location: "Baltimore, MD",
+      location: "Maryland",
       description:
         "Updated iOS application and integrated analytics pipelines to track user behavior and improve application transparency.",
       highlights: [
