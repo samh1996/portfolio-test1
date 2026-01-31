@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./projects.module.css";
 
 export const metadata = {
@@ -35,6 +34,47 @@ const Projects = () => {
           </p>
 
           <div className={styles.projectGrid}>
+            <article className={styles.card}>
+              <div className={styles.cardTag}>Complete</div>
+              <h2 className={styles.cardTitle}>OpenAI & Gemini Chatbot</h2>
+              <p className={styles.cardDesc}>
+                A modern, responsive chat application built with React and Vite
+                that supports multiple AI assistants including Google AI
+                (Gemini) and OpenAI (GPT). Features real-time streaming
+                responses, markdown support, and a clean, intuitive interface.
+              </p>
+              <div className={styles.tech}>
+                React · Vite · OpenAI API · Google AI API
+              </div>
+              <div className={styles.cardActions}>
+                <a
+                  className={`${styles.btn} ${styles.primary}`}
+                  href="https://youtu.be/Oe6emFSVWvM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  YouTube Demo{" "}
+                  <span className={styles.externalLinkIcon}>↗</span>
+                </a>
+                <a
+                  className={styles.btn}
+                  href="https://github.com/samh1996/react-ai-chatbox"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+                <a
+                  className={styles.btn}
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Website (Coming Soon)
+                </a>
+              </div>
+            </article>
+
             <article className={styles.card}>
               <div className={styles.cardTag}>Complete</div>
               <h2 className={styles.cardTitle}>Game Hub</h2>
