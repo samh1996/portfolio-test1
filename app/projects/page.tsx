@@ -44,11 +44,19 @@ const Projects = () => {
                 responses, markdown support, and a clean, intuitive interface.
               </p>
               <div className={styles.tech}>
-                React · Vite · OpenAI API · Google AI API
+                OpenAI API · Google AI API · React · Vite
               </div>
               <div className={styles.cardActions}>
                 <a
                   className={`${styles.btn} ${styles.primary}`}
+                  href="https://ai-chatbot-sam.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Website <span className={styles.externalLinkIcon}>↗</span>
+                </a>
+                <a
+                  className={styles.btn}
                   href="https://youtu.be/Oe6emFSVWvM"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -63,14 +71,6 @@ const Projects = () => {
                   rel="noopener noreferrer"
                 >
                   GitHub
-                </a>
-                <a
-                  className={styles.btn}
-                  href="https://ai-chatbot-sam.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Website
                 </a>
               </div>
             </article>
@@ -107,37 +107,6 @@ const Projects = () => {
             </article>
 
             <article className={styles.card}>
-              <div className={styles.cardTag}>In Progress</div>
-              <h2 className={styles.cardTitle}>NeighborShare</h2>
-              <p className={styles.cardDesc}>
-                Platform for neighbors to give away extra produce and animal
-                products safely, with simple listings, messaging, and location
-                search.
-              </p>
-              <div className={styles.tech}>
-                Java · Spring Boot · Next.js · PostgreSQL
-              </div>
-              <div className={styles.cardActions}>
-                <a
-                  className={`${styles.btn} ${styles.primary}`}
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live (coming soon)
-                </a>
-                <a
-                  className={styles.btn}
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-              </div>
-            </article>
-
-            <article className={styles.card}>
               <div className={styles.cardTag}>Kubernetes</div>
               <h2 className={styles.cardTitle}>Nyla Cluster</h2>
               <p className={styles.cardDesc}>
@@ -166,6 +135,37 @@ const Projects = () => {
             </article>
 
             <article className={styles.card}>
+              <div className={styles.cardTag}>In Progress</div>
+              <h2 className={styles.cardTitle}>NeighborShare</h2>
+              <p className={styles.cardDesc}>
+                Platform for neighbors to give away extra produce and animal
+                products safely, with simple listings, messaging, and location
+                search.
+              </p>
+              <div className={styles.tech}>
+                Java · Spring Boot · Next.js · PostgreSQL
+              </div>
+              <div className={styles.cardActions}>
+                {/* <a
+                  className={`${styles.btn} ${styles.primary}`}
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live (coming soon)
+                </a> */}
+                <a
+                  className={`${styles.btn} ${styles.disabled}`}
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article className={styles.card}>
               <div className={styles.cardTag}>API - In Progress</div>
               <h2 className={styles.cardTitle}>Match Predictor</h2>
               <p className={styles.cardDesc}>
@@ -174,16 +174,16 @@ const Projects = () => {
               </p>
               <div className={styles.tech}>Python · scikit-learn · FastAPI</div>
               <div className={styles.cardActions}>
-                <a
+                {/* <a
                   className={`${styles.btn} ${styles.primary}`}
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Live (coming soon)
-                </a>
+                </a> */}
                 <a
-                  className={styles.btn}
+                  className={`${styles.btn} ${styles.disabled}`}
                   href="https://github.com/your-username/match-predictor"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -208,7 +208,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Repo
+                  Github
                 </a>
               </div>
             </article>

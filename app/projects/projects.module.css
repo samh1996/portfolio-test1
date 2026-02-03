@@ -162,6 +162,19 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
+.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn.disabled:hover {
+  background: transparent;
+  border-color: rgba(148, 163, 184, 0.6);
+  transform: none;
+  box-shadow: none;
+}
+
 .primary {
   background: linear-gradient(135deg, var(--primary), #ff9f1c);
   color: #111827;
