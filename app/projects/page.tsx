@@ -66,7 +66,7 @@ const Projects = () => {
                 </a>
                 <a
                   className={styles.btn}
-                  href="ai-chatbot-sam.vercel.app"
+                  href="https://ai-chatbot-sam.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
