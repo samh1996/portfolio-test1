@@ -66,11 +66,11 @@ const Projects = () => {
                 </a>
                 <a
                   className={styles.btn}
-                  href="#"
+                  href="ai-chatbot-sam.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Website (Coming Soon)
+                  Website
                 </a>
               </div>
             </article>
