@@ -31,7 +31,7 @@ const Page = () => {
             <h2 className={styles.videoTitle}>Netlifx monopoly submission</h2>
             <div className={styles.videoWrapper}>
               <video className={styles.video} controls playsInline>
-                <source src="/monopoly4.mp4" type="video/mp4" />
+                <source src="/monopoly.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
