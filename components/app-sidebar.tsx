@@ -5,6 +5,7 @@ import {
   BadgeDollarSign,
   Briefcase,
   BriefcaseBusiness,
+  Dice5,
   FolderGit2,
   GalleryVerticalEnd,
   House,
@@ -152,6 +153,11 @@ const data = {
       name: "Freelance",
       url: "/freelance",
       icon: BadgeDollarSign,
+    },
+    {
+      name: "Monopoly",
+      url: "/monopoly",
+      icon: Dice5,
     },
     {
       name: "Contact",

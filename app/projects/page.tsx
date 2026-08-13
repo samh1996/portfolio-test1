@@ -77,6 +77,38 @@ const Projects = () => {
 
             <article className={styles.card}>
               <div className={styles.cardTag}>Complete</div>
+              <h2 className={styles.cardTitle}>ToBib Voting Game</h2>
+              <p className={styles.cardDesc}>
+                Cards Against Humanity meets Jackbox! An online voting game
+                where everyone submits from their hand or creates a custom card
+                and then everyone votes on the answers!
+              </p>
+              <div className={styles.tech}>
+                Python · DynamoDB · Lambda · APIGateway · React · Vite
+              </div>
+              <div className={styles.cardActions}>
+                <a
+                  className={`${styles.btn} ${styles.primary}`}
+                  href="https://tobib.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Website <span className={styles.externalLinkIcon}>↗</span>
+                </a>
+                <a
+                  className={styles.btn}
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  YouTube Demo{" "}
+                  <span className={styles.externalLinkIcon}>↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article className={styles.card}>
+              <div className={styles.cardTag}>Complete</div>
               <h2 className={styles.cardTitle}>Game Hub</h2>
               <p className={styles.cardDesc}>
                 A React web app that displays video games with dynamic filtering
